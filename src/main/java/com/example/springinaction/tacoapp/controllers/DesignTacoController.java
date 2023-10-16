@@ -5,7 +5,6 @@ import com.example.springinaction.tacoapp.Ingredient.*;
 import com.example.springinaction.tacoapp.Taco;
 import com.example.springinaction.tacoapp.TacoOrder;
 import com.example.springinaction.tacoapp.data.IngredientRepository;
-import com.example.springinaction.tacoapp.data.JdbcIngredientRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -13,8 +12,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 

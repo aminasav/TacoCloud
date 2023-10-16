@@ -3,13 +3,16 @@ package com.example.springinaction.tacoapp;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+@Table
 @Data
 public class TacoOrder {
+    @Id
     private long id;
     private Date placedAt;
 
